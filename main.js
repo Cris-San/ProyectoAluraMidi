@@ -17,4 +17,21 @@ for ( let contador = 0; contador < listaDeTeclas.length; contador++) {
     tecla.onclick = function(){
         playSonido(idAudio);
     };
+
+    //Cuando se presione ENTER o SPACEBAR
+
+    //Aplica fondo rojo - Activa la clase
+    tecla.onkeydown = function(evento) {
+        
+        if (evento.code === 'Space' || evento.code === 'Enter') {//||operador OR
+            tecla.classList.add('activa');//Si alguna de las condiciones es valida activa la clase.
+        }
+
+    }
+
+    //Quita fondo rojo Desactiva la clase
+    tecla.onkeyup = function() {
+        tecla.classList.remove('activa');
+    }
+
 }
