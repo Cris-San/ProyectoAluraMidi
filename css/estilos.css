@@ -53,6 +53,7 @@ h1 {
   width: 120px;
 }
 
+/*Estilos para cuando el usuario presiona una tecla*/
 .tecla.activa,
 .tecla:active {
   background-color: var(--rojo);
